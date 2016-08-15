@@ -6,7 +6,6 @@ var app = http.createServer(function(req, res) {
   var index = path.join(__dirname, 'index.html')
 
   if(req.url === '/' || req.url === '/index.html') {
-
     fs.readFile(index, function(err, data){
       if(err) {
         console.error(err)
@@ -22,7 +21,6 @@ var app = http.createServer(function(req, res) {
     console.log('resource not found: '+req.url)
     res.writeHead(404, {'Content-Type': 'text/html'})
     res.end('<html><body><h1>404 not found</h1></body>')
-
   }
 })
 
