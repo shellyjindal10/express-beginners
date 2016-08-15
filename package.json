@@ -13,7 +13,10 @@
     ""
   ],
   "dependencies": {
-    "express": "^3.21.2"
+    "express": "^3.21.2",
+    "babel": "~6.5.2",
+    "babel-cli": "~6.5.1",
+    "babel-core": "~6.5.2"
   },
   "devDependencies": {},
   "repository": "https://github.com/shellyjindal10/express-beginners",
