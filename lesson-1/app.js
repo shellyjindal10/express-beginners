@@ -1,10 +1,12 @@
-var express = require('express')
-var app = express()
+var express = require('express'),
+    app = express(),
+    port = process.env.PORT || 9000
 
-app.listen(9000)
+app.get('/', function(req, res){
+  var data = '<h1>Hello world</h1>'
 
-app.get('/', function(request, response){
-  response.send('<h1>This would be some HTML</h1>');
+  res.writeHead(200, {'Content-Type': 'text/html'})
+  res.end(data)
 })
 
 app.get('/api', function(req, res){
@@ -13,3 +15,5 @@ app.get('/api', function(req, res){
     age: 40
   })
 })
+
+app.listen(port)
