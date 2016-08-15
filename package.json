@@ -1,0 +1,25 @@
+{
+  "name": "Express-beginners",
+  "version": "0.0.0",
+  "description": "this is to start learning the express server",
+  "homepage": "",
+  "author": {
+    "name": "Shelly Jindal",
+    "email": "jinshelly@gmail.com",
+    "url": ""
+  },
+  "main": "index.js",
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "express": "^3.21.2"
+  },
+  "devDependencies": {},
+  "repository": "https://github.com/shellyjindal10/express-beginners",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "ISC"
+}
