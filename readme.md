@@ -23,7 +23,7 @@ Building a full-fledged web framework is a lot of work:
  * doesn't do any caching, and doesn't set any client cache headers
 
 
-### lesson-03-A
+### lesson-03
 Simple Express "Hello World" example using middleware.
 Simple Express example with multiple middlewares
 
