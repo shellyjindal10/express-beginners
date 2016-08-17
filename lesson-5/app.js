@@ -12,4 +12,7 @@ app.use(function(req, res) {
   res.end(data)
 })
 
-app.listen(port)
+app.listen(port, function(){
+	 //callback inner function to print the port number on which app is running
+  console.log('The Server is running on port  =>'+port)
+})
