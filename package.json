@@ -13,10 +13,13 @@
     ""
   ],
   "dependencies": {
-    "express": "^3.21.2",
     "babel": "~6.5.2",
     "babel-cli": "~6.5.1",
-    "babel-core": "~6.5.2"
+    "babel-core": "~6.5.2",
+    "express": "^3.21.2",
+    "generate-schema": "^2.1.1",
+    "node-inspector": "^0.12.8",
+    "nodemon": "^1.10.0"
   },
   "devDependencies": {},
   "repository": "https://github.com/shellyjindal10/express-beginners",
