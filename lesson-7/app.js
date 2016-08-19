@@ -24,13 +24,12 @@ app.get('/', function(req, res) {
 })
 
 app.get('/blog/:title?', function(req, res) {
-	 var title = req.params.title; //fetching the requested ids 
-	 var post = posts[title]; // matching the object with the key (requested ids)
+  var title = req.params.title; //fetching the requested ids
+  var post = posts[title]; // matching the object with the key (requested ids)
 
-	 if(title === undefined) {
-	 	 res.status(500); //setting the status code of response, since we dont have a title defined it should not give 200 status
-	   res.send('<h1>This page is under construction</h1>') 
-	 }
+  if(title === undefined) {
+    res.status(500); //setting the status code of response, since we dont have a title defined it should not give 200 status
+    res.send('<h1>This page is under construction</h1>')}
 
   res.send(post); //posting the result as response.
 })
